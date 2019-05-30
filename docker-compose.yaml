@@ -65,17 +65,17 @@ services:
       "
 
   seth-tp:
-    build:
-      context: .
-      dockerfile: ./processor/Dockerfile
-      args:
-        - ISOLATION_ID=${ISOLATION_ID}
-        - http_proxy
-        - https_proxy
-        - no_proxy
+    # build:
+    #   context: .
+    #   dockerfile: ./processor/Dockerfile
+    #   args:
+    #     - ISOLATION_ID=${ISOLATION_ID}
+    #     - http_proxy
+    #     - https_proxy
+    #     - no_proxy
     tty: true
     stdin_open: true
-    image: sawtooth-seth-tp:${ISOLATION_ID}
+    image: hyperledger/sawtooth-seth-tp
     container_name: seth-tp
     depends_on:
       - validator
