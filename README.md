@@ -21,7 +21,7 @@ https://sawtooth.hyperledger.org/docs/seth/releases/latest/introduction.html
 Troubleshoot
 ------------
 
-It is possible that settings transaction processor fails to build and in this case, you may get error like this:
+It is possible that `sawtooth-seth-tp` transaction processor fails to build and in this case, you may get error like this:
 `ERROR: Service 'seth-tp' failed to build:`. If that happens, then do not build `tp`. It is better to download the image from the directory itself. Do below in YAML file.
 
 ```
