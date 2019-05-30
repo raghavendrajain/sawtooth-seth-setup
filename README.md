@@ -22,7 +22,7 @@ Troubleshoot
 ------------
 
 It is possible that settings transaction processor fails to build and in this case, you may get error like this:
-`ERROR: Service 'seth-tp' failed to build:`. If that happens, then do not build `tp`. It is better to download the image from the directory itself. 
+`ERROR: Service 'seth-tp' failed to build:`. If that happens, then do not build `tp`. It is better to download the image from the directory itself. Do below in YAML file.
 
 ```
   seth-tp:
