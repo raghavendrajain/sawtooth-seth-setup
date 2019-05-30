@@ -18,6 +18,9 @@ Documentation
 Documentation for how to run and extend Sawtooth is available here:
 https://sawtooth.hyperledger.org/docs/seth/releases/latest/introduction.html
 
+Troubleshoot
+------------
+
 License
 -------
 
