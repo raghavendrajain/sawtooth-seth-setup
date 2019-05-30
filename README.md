@@ -18,6 +18,21 @@ Documentation
 Documentation for how to run and extend Sawtooth is available here:
 https://sawtooth.hyperledger.org/docs/seth/releases/latest/introduction.html
 
+Troubleshoot
+------------
+
+It is possible that `sawtooth-seth-tp` transaction processor fails to build and in this case, you may get error like this:
+`ERROR: Service 'seth-tp' failed to build:`. If that happens, then do not build `tp`. It is better to download the image from the directory itself. Do below in YAML file.
+
+```
+  seth-tp:
+    tty: true
+    stdin_open: true
+    image: hyperledger/sawtooth-seth-tp
+    container_name: seth-tp
+    
+ ```
+
 License
 -------
 
